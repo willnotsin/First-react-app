@@ -1,13 +1,19 @@
-import "./App.css"
-
-export default function App(){
+import "./App.css";
+import Container from "./components/Container";
+import Todo from "./components/Todo";
+export default function App() {
   return (
     <div className="App">
-      <section className="App-header">
-        <p className='text'>Helllooooo</p>
-
-      </section>
+      <Container>
+        <div>
+          {" "}
+          <h1>My Todos</h1>
+          <Todo text="Learn react"/>
+          <Todo />
+        </div>
+      </Container>
 
     </div>
-  )
+   
+  );
 }
