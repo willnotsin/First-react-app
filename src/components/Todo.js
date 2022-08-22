@@ -25,7 +25,7 @@ export default function Todo(prop) {
           Delete
         </Button>
       </div>
-      {openModal && <Modal />}
+      {openModal && <Modal onCancel={closeModalHandler} onConfirm={closeModalHandler}/>}
       {openModal && <Backdrop onClick={closeModalHandler}/>}
       {/* In javascript, if two statements are true, 
       the second statement will be returned 
